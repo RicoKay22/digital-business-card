@@ -363,9 +363,15 @@ export default function RicoCard() {
                 <div className="flip-back" style={{background:T.bg,border:`1px solid ${T.border}`}}>
                   <p style={{fontFamily:"'Space Mono',monospace",color:T.p,fontSize:"0.62rem",marginBottom:10,letterSpacing:2}}>SCAN TO VISIT CARD</p>
                   <img src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(CONFIG.liveUrl)}&margin=8`}
-                    alt="QR Code" style={{width:148,height:148,borderRadius:8,border:`2px solid ${T.p}`}}/>
-                  <p style={{color:T.muted,fontSize:"0.65rem",marginTop:8}}>Update liveUrl after Vercel deploy</p>
-                  <button style={{...btnG,marginTop:10}} onClick={()=>setQrFlipped(false)}>↩ Flip back</button>
+                    alt="QR Code" style={{width:148,height:148,borderRadius:8,border:`2px solid ${T.p}`}}/> 
+                  <div style={{display:"flex",gap:8,marginTop:10}}>
+                    <button style={{...btnG}} onClick={()=>copy(CONFIG.liveUrl,"qr")}>
+                      {copied==="qr"?<Check size={12} color="#4ade80"/>:<Copy size={12}/>}
+                      {copied==="qr"?" Copied!":" Copy Link"}
+                    </button>
+                    <a href={`https://wa.me/?text=${encodeURIComponent("Check out my digital card: "+CONFIG.liveUrl)}`} target="_blank" rel="noreferrer" style={{...btnG,textDecoration:"none",color:T.muted}}>💬 WhatsApp</a>
+                  </div>
+                  <button style={{...btnG,marginTop:8}} onClick={()=>setQrFlipped(false)}>↩ Flip back</button>
                 </div>
               </div>
             </div>
