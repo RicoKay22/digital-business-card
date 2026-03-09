@@ -1,8 +1,8 @@
 # 💳 Rico Kay — Digital Business Card
 
-> A modern, interactive digital business card built with React. Fast, mobile-first, and deployable in seconds.
+> Ditch the paper. This is a fully interactive digital business card built with React, featuring animated themes, a skills radar chart, live project showcase, QR code sharing, Supabase-powered visitor tracking, and one-tap contact saving. Mobile-first, production-ready, and built to impress.
 
-🔗 **Live Demo:** [rico-card.vercel.app](https://rico-card.vercel.app) *(update after deploy)*
+🔗 **Live Demo:** [digital-business-card-beta-opal.vercel.app](https://digital-business-card-beta-opal.vercel.app)
 
 ---
 
@@ -18,8 +18,9 @@
 - 📋 **Copy Buttons** — one-click copy for email & phone
 - 💾 **Save Contact** — downloads a `.vcf` file for contacts
 - 🔗 **Share Card** — native share sheet or clipboard fallback
-- 📷 **QR Code Flip Card** — animated flip with QR code for card URL
-- 👋 **Visitor Guestbook** — drop your name, stored in localStorage
+- 📷 **QR Code Flip Card** — animated flip with Copy Link + WhatsApp share buttons
+- 👋 **Visitor Guestbook** — drop your name, saved to Supabase database in real time
+- 📡 **Supabase Backend** — every visitor name tracked with timestamp, visible in your dashboard
 - 📈 **Scroll Progress Bar** — top-of-page progress indicator
 - 🔲 **Animated Tech Grid Background**
 - 📚 **Currently Learning** section
@@ -34,6 +35,7 @@
 | React | UI framework |
 | Recharts | Skills radar chart |
 | Lucide React | Icons |
+| Supabase | Visitor tracking database |
 | Vite | Build tool |
 | Vercel | Deployment |
 | Google Fonts | Space Mono + Plus Jakarta Sans |
@@ -82,6 +84,28 @@ const CONFIG = {
 
 ---
 
+## 🗄️ Supabase Setup (Visitor Tracking)
+
+This project uses [Supabase](https://supabase.com) to track visitors in real time.
+
+1. Create a free Supabase project
+2. Create a table called `Visitors` with columns:
+   - `visited_at` — type: `timestamptz`, default: `now()`
+   - `name` — type: `text`
+3. Disable Row Level Security on the table
+4. Replace the Supabase URL and anon key in `App.jsx`:
+
+```js
+const supabase = createClient(
+  "https://your-project.supabase.co",
+  "your-anon-key"
+);
+```
+
+Every time someone drops their name in the guestbook, it saves to your Supabase dashboard with a timestamp — so you always know who visited. 👀
+
+---
+
 ## 📦 Deployment
 
 This project is deployed on **Vercel**.
@@ -121,4 +145,4 @@ rico-card/
 
 ## 📄 License
 
-MIT — feel free to fork and build your own version!
+MIT © 2026 Olayinka Olumide (Rico Kay), feel free to fork and build your own version!
