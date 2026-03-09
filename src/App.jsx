@@ -161,7 +161,7 @@ export default function RicoCard() {
   setVisitorInput("");
   try {
     localStorage.setItem("rico_visitors", JSON.stringify(updated));
-    await supabase.from("Visitors").insert({ name });
+    await supabase.from("Visitors").insert({ Name: name });
   } catch {}
 };
 
