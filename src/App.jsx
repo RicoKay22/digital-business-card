@@ -34,7 +34,7 @@ const CONFIG = {
     { id: 3, title: "Travel Visa App", desc: "Multi-step visa form with passport-themed UI, animated stamps, drag and drop upload, and downloadable PDF approval certificate.", github: "https://github.com/RicoKay22/travel-visa-application", live: "https://travel-visa-application.vercel.app/", tags: ["HTML/CSS", "JavaScript"], color: "#ffd93d" },
   ],
   vcf: "BEGIN:VCARD\nVERSION:3.0\nFN:Olayinka Olumide\nNICKNAME:Rico Kay\nTITLE:Frontend Developer\nEMAIL:olumideolayinka13@gmail.com\nTEL;TYPE=CELL:+2348083545793\nURL:https://github.com/RicoKay22\nADR:;;Lagos;;Nigeria\nEND:VCARD",
-  liveUrl: "https://your-card.vercel.app",
+  liveUrl: "https://digital-business-card-beta-opal.vercel.app/",
 };
 
 const THEMES = {
