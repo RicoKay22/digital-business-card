@@ -35,7 +35,7 @@ const CONFIG = {
     { name: "API Integ.", level: 65, years: 1, projects: 2 },
   ],
   projects: [
-    {id: 1, title: "KayAcademy", desc: "From frontend engineering to economics, civil engineering to data science, KayAcademy brings world-class education to the next generation of African professionals.", github: "https://github.com/RicoKay22/kayacademy/tree/main", live: "https://kayacademy.vercel.app/", tags: ["React", "Supabase", "vite"], color: "#8792f8" },
+    {id: 1, title: "KayAcademy", desc: "KayAcademy brings world-class education to the next generation of African professionals.", github: "https://github.com/RicoKay22/kayacademy/tree/main", live: "https://kayacademy.vercel.app/", tags: ["React", "Supabase", "vite"], color: "#8792f8" },
     { id: 2, title: "RicoAI Chatbot", desc: "ChatGPT-style AI chatbot powered by real LLM models via OpenRouter API. Built for Web3Bridge Frontend JS Advanced Cohort XIV.", github: "https://github.com/RicoKay22/ai-chatbot", live: "https://ai-chatbot-two-psi-58.vercel.app/", tags: ["JavaScript", "AI", "OpenRouter"], color: "#00ffcc" },
     { id: 3, title: "Rico Movie Vault", desc: "Production-ready movie library showcasing advanced JS OOP, smart caching, and scalable architecture.", github: "https://github.com/RicoKay22/rico-movies-library", live: "https://rico-movies-library.vercel.app/", tags: ["JavaScript", "OOP", "API"], color: "#ff6b6b" },
     { id: 4, title: "Travel Visa App", desc: "Multi-step visa form with passport-themed UI, animated stamps, drag and drop upload, and downloadable PDF approval certificate.", github: "https://github.com/RicoKay22/travel-visa-application", live: "https://travel-visa-application.vercel.app/", tags: ["HTML/CSS", "JavaScript"], color: "#ffd93d" },
