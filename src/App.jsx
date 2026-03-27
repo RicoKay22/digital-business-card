@@ -13,9 +13,9 @@ const PHOTO = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCg
 const CONFIG = {
   name: "Olayinka Olumide",
   nick: "Rico Kay",
-  title: "Frontend Developer",
+  title: "Frontend Engineer",
   tagline: "Building modern web experiences & exploring AI-powered tools.",
-  bio: "I\'m Olumide aka Rico, a frontend developer passionate about building clean, responsive, and user-focused web applications. I enjoy turning ideas into functional digital products and continuously improving my skills as I work toward becoming a full-stack engineer.",
+  bio: "I\'m Olumide aka Rico, a frontend engineer passionate about building clean, responsive, and user-focused web applications. I enjoy turning ideas into functional digital products and continuously improving my skills as I work toward becoming a full-stack engineer.",
   status: "available",
   email: "olumideolayinka13@gmail.com",
   phone: "+2348083545793",
@@ -29,16 +29,18 @@ const CONFIG = {
   skills: [
     { name: "HTML/CSS", level: 85, years: 2, projects: 5 },
     { name: "JavaScript", level: 80, years: 2, projects: 5 },
-    { name: "React", level: 45, years: 0.5, projects: 1 },
+    { name: "React", level: 60, years: 0.5, projects: 1 },
     { name: "UI Design", level: 70, years: 2, projects: 4 },
     { name: "Git/GitHub", level: 75, years: 1, projects: 5 },
     { name: "API Integ.", level: 65, years: 1, projects: 2 },
   ],
   projects: [
-    { id: 1, title: "RicoAI Chatbot", desc: "ChatGPT-style AI chatbot powered by real LLM models via OpenRouter API. Built for Web3Bridge Frontend JS Advanced Cohort XIV.", github: "https://github.com/RicoKay22/ai-chatbot", live: "https://ai-chatbot-two-psi-58.vercel.app/", tags: ["JavaScript", "AI", "OpenRouter"], color: "#00ffcc" },
-    { id: 2, title: "Rico Movie Vault", desc: "Production-ready movie library showcasing advanced JS OOP, smart caching, and scalable architecture.", github: "https://github.com/RicoKay22/rico-movies-library", live: "https://rico-movies-library.vercel.app/", tags: ["JavaScript", "OOP", "API"], color: "#ff6b6b" },
-    { id: 3, title: "Travel Visa App", desc: "Multi-step visa form with passport-themed UI, animated stamps, drag and drop upload, and downloadable PDF approval certificate.", github: "https://github.com/RicoKay22/travel-visa-application", live: "https://travel-visa-application.vercel.app/", tags: ["HTML/CSS", "JavaScript"], color: "#ffd93d" },
+    {id: 1, title: "KayAcademy", desc: "From frontend engineering to economics, civil engineering to data science, KayAcademy brings world-class education to the next generation of African professionals.", github: "https://github.com/RicoKay22/kayacademy/tree/main", live: "https://kayacademy.vercel.app/", tags: ["React", "Supabase", "vite"], color: "#8792f8" },
+    { id: 2, title: "RicoAI Chatbot", desc: "ChatGPT-style AI chatbot powered by real LLM models via OpenRouter API. Built for Web3Bridge Frontend JS Advanced Cohort XIV.", github: "https://github.com/RicoKay22/ai-chatbot", live: "https://ai-chatbot-two-psi-58.vercel.app/", tags: ["JavaScript", "AI", "OpenRouter"], color: "#00ffcc" },
+    { id: 3, title: "Rico Movie Vault", desc: "Production-ready movie library showcasing advanced JS OOP, smart caching, and scalable architecture.", github: "https://github.com/RicoKay22/rico-movies-library", live: "https://rico-movies-library.vercel.app/", tags: ["JavaScript", "OOP", "API"], color: "#ff6b6b" },
+    { id: 4, title: "Travel Visa App", desc: "Multi-step visa form with passport-themed UI, animated stamps, drag and drop upload, and downloadable PDF approval certificate.", github: "https://github.com/RicoKay22/travel-visa-application", live: "https://travel-visa-application.vercel.app/", tags: ["HTML/CSS", "JavaScript"], color: "#ffd93d" },
   ],
+
   vcf: "BEGIN:VCARD\nVERSION:3.0\nFN:Olayinka Olumide\nNICKNAME:Rico Kay\nTITLE:Frontend Developer\nEMAIL:olumideolayinka13@gmail.com\nTEL;TYPE=CELL:+2348083545793\nURL:https://github.com/RicoKay22\nADR:;;Lagos;;Nigeria\nEND:VCARD",
   liveUrl: "https://digital-business-card-beta-opal.vercel.app/",
 };
